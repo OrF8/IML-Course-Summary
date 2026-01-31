@@ -29,7 +29,7 @@ function Export-DocxToPdfWithBookmarksHighQuality {
     $word.Visible = $false
     $word.DisplayAlerts = 0
 
-    # Open read-only (named args => stable)
+    # Open read-only
     $doc = $word.Documents.Open(
       $DocxPath,
       $false,   # ConfirmConversions
@@ -91,7 +91,7 @@ if (Test-Path -LiteralPath $pdf) {
 # ----------- Update Git -----------
 
 git add -u
-Write-Host "`nStaged files:"
+Write-Host "Staged files:"
 git diff --cached --name-only
 Write-Host ""
 git status
