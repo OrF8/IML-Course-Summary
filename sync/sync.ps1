@@ -1,4 +1,4 @@
-Set-Location -LiteralPath $PSScriptRoot
+Set-Location -LiteralPath (Split-Path $PSScriptRoot -Parent)
 
 git switch main | Out-Null
 git pull --rebase
