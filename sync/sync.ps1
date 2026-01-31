@@ -140,4 +140,4 @@ if (-not [string]::IsNullOrWhiteSpace($tagName)) {
   }
 }
 
-Write-Host "`nDone ✅"
+Write-Host "Done :)"
