@@ -65,3 +65,15 @@ git lfs pull
 ## ⚠️ Disclaimer
 These notes reflect **my personal understanding** of the course material.
 They may contain mistakes or omissions and are **not a substitute** for official lectures, slides, or textbooks.
+
+---
+
+## 📜 License
+
+This repository is licensed under  
+**Creative Commons Attribution–NonCommercial–ShareAlike 4.0 (CC BY-NC-SA 4.0)**.
+
+You are free to use and adapt the material for **non-commercial educational purposes**,  
+provided proper attribution is given and derivative works use the same license.
+For more information, see the [LICENSE](https://github.com/OrF8/IML-Course-Summary/blob/main/LICENSE).
+
