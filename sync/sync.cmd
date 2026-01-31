@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal EnableExtensions
 
 echo.
 set /p USEMSG=Do you want to enter a commit message? (y/n): 
@@ -7,9 +7,9 @@ set /p USEMSG=Do you want to enter a commit message? (y/n):
 if /I "%USEMSG%"=="y" (
     echo.
     set /p MSG=Enter commit message: 
-    powershell -ExecutionPolicy Bypass -File "%~dp0sync.ps1" "%MSG%"
+    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0sync.ps1" -Message "%MSG%"
 ) else (
-    powershell -ExecutionPolicy Bypass -File "%~dp0sync.ps1"
+    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0sync.ps1"
 )
 
 echo.
