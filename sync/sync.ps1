@@ -12,7 +12,7 @@ if (git diff --cached --quiet) {
 }
 
 $useMsg = Read-Host "Do you want to enter a commit message? (y/n)"
-if ($useMsg -match '^(y|yes)$') {
+if ($useMsg -match '^(y|yes|Y|YEs|YES)$') {
   $msg = Read-Host "Enter commit message"
   if ([string]::IsNullOrWhiteSpace($msg)) {
     Write-Host "Empty message → using default."
