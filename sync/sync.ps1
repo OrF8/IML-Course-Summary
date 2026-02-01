@@ -73,9 +73,14 @@ if (-not $docx) { throw "No DOCX found in $(Get-Location)" }
 $pdf = [System.IO.Path]::ChangeExtension($docx.FullName, ".pdf")
 
 if (Test-Path -LiteralPath $pdf) {
+  $ExportThresholdMinutes = 1
+  $threshold = [TimeSpan]::FromMinutes($ExportThresholdMinutes)
+	
   $docxTime = (Get-Item -LiteralPath $docx.FullName).LastWriteTime
   $pdfTime  = (Get-Item -LiteralPath $pdf).LastWriteTime
-  if ($pdfTime -ge $docxTime) {
+  $delta = $docxTime - $pdfTime
+
+  if ($delta -le $threshold) {
     Write-Host "PDF is up-to-date; skipping export."
   } else {
     Write-Host "Exporting PDF from:" $docx.Name
@@ -90,7 +95,7 @@ if (Test-Path -LiteralPath $pdf) {
 
 # ----------- Update Git -----------
 
-git add -u
+git add .
 Write-Host "Staged files:"
 git diff --cached --name-only
 Write-Host ""
