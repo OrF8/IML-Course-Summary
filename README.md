@@ -46,6 +46,7 @@ This repository uses **Git Large File Storage (LFS)** for:
 
 - `.pdf`
 - `.docx`
+- `.gif`
 
 If you clone this repo, make sure Git LFS is installed:
 
