@@ -2,7 +2,7 @@
 This repository contains my **personal course summary** for  
 **67577 – Introduction to Machine Learning** at **The Hebrew University of Jerusalem**.
 > The summary is available as a PDF file [**here**](https://github.com/OrF8/IML-Course-Summary/blob/main/%D7%9E%D7%91%D7%95%D7%90%20%D7%9C%D7%9C%D7%9E%D7%99%D7%93%D7%AA%20%D7%9E%D7%9B%D7%95%D7%A0%D7%94%20-%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%94%D7%A7%D7%95%D7%A8%D7%A1%20-%20%D7%A1%D7%9E%D7%A1%D7%98%D7%A8%20%D7%90'%202026.pdf).
-> It can also be found in my Google Drive, [**here**](https://drive.google.com/file/d/1IqSWcBgL1cc4mEHYV5vH7OXbfw01RHfH/view?usp=drive_link)
+> It can also be found in my Google Drive, [**here**](https://drive.google.com/file/d/1IqSWcBgL1cc4mEHYV5vH7OXbfw01RHfH/view?usp=drive_link).
 
 ---
 
